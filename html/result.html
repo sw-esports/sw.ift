@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/result.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+         <div class="upper-con">
+            <div class="left">
+                <div class="upper">
+                    <div class="stars">
+                    </div>
+                </div>
+                <div class="lower">
+                    <div class="wpm-box">
+                        <div class="wpm-circle">
+                            <div class="outer">
+                                <div class="inner">
+    
+                                    <div id="percentage">
+                                        <h1 id="wpm">10</h1>
+                                        <div style="text-align: center;">Wpm</div>
+    
+                                    </div>
+                                </div>
+                                <!-- <h1 class="wpm-text">WPM</h1> -->
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor1">
+                                        <stop offset="0%" stop-color="#00ffff" />  <!-- Coral -->
+                                        <stop offset="100%" stop-color="#00ff" /> <!-- Dodger Blue -->
+                                    </linearGradient>
+                                </defs>
+    
+                                <circle class="circle1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="accuracy">
+                            <div class="wpm-circle">
+                            <div class="outer">
+                                <div class="inner">
+    
+                                    <div id="percentage">
+                                        <h1 style="font-size:x-large;" id="wpm">10</h1>
+    
+    
+                                    </div>
+                                </div>
+                                <!-- <h1 class="wpm-text">WPM</h1> -->
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor2">
+                                        <stop offset="0%" stop-color="#20B2AA" />
+                                        <stop offset="100%" stop-color="#673ab9" />
+                                    </linearGradient>
+                                </defs>
+    
+                                <circle class="circle2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        </div>
+                        <div class="timeTaken">
+                            <div class="time-circle">
+                                <div class="outer">
+                                    <div class="inner">
+        
+                                        <div id="percentage">
+                                            <h1 id="wpm">10</h1>
+                                          
+        
+                                        </div>
+                                    </div>
+                                    <!-- <h1 class="wpm-text">WPM</h1> -->
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient  id="GradientColor3">
+                                           <stop offset="0%" stop-color="#e91e63" />
+                                           <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                     </defs>
+        
+                                    <circle class="circle3" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <canvas id="bar" ></canvas>
+    
+            </div>
+           <div class="lower-con">
+            <button onclick="home()" id="home"class="box">Home</button>
+            <button onclick="redo()" id="redo" class="box">Redo</button>
+           </div>
+            </div>
+         </div>
+    </main>
+    <script src="/javascripts/result.js"></script>
+</body>
+
+</html>

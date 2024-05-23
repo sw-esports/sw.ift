@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="/stylesheets/typing_test.css">
+</head>
+
+<body>
+    <div id="mySidenav"  class="sidenav">Menu Content
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Setting</a>
+        <a href="#">Typing Lesson</a>
+        <a href="#">Contact</a>
+    
+    </div>
+    <nav>
+        <div class="nav-left ">
+         <div class="logo"> <img onclick="home()" src="/assets/images/logo.png" alt="">SW-IFT</div>
+        </div>
+        <div class="nav-right"><div class="tools">
+            <i class="ri-restart-line" onclick="restartAction()"></i>
+            <i class="ri-pause-fill" onclick="pauseAction()"></i>
+            <i style="display: none;" class="ri-play-fill" onclick="playAction()"></i>
+            <i class="ri-volume-mute-fill" onclick="muteAction()"></i>
+            <i style="display: none;" class="ri-volume-up-fill" onclick="unmuteAction()"></i>
+            <i class="ri-menu-line" onclick="openNav()"></i>        
+        </div></div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="left-upper">
+                    <div class="typing-text">
+                        <p></p>
+
+                    </div>
+                </div>
+                <div class="left-lower">
+                    <div class="image-container">
+                        <img class="keyboard-image" src="/assets/images/i.png" alt="typing">
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="right-upper">
+                    <div class="wpm-circle">
+                        <div class="outer">
+                            <div class="inner">
+                               
+                                <div id="percentage">
+                                    <h1 id="wpm">10</h1><div style="text-align: center;">Wpm</div>
+                                
+                                </div>
+                            </div>
+                         <!-- <h1 class="wpm-text">WPM</h1> -->
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                   <stop offset="0%" stop-color="#20B2AA" />
+                                   <stop offset="100%" stop-color="#673ab9" />
+                                </linearGradient>
+                             </defs>
+                             
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                    </div>
+                    <div class="accuracy">
+                        <span>Accuracy:</span>
+                        <span id="acc-value">100%</span>
+                    </div>
+                </div>
+                <div class="right-lower">
+                    <div class="timer">
+                        <span>Time Left:</span>
+                        <span id="time-value">start please..</span>
+                    </div>
+                    <div class="mistakes">
+                        <span>Mistakes:</span>
+                        <span id="mistake-value">0</span>
+                    </div>
+                    <div class="submit-btn">
+                        <button  class="button" onclick="showResult()">Submit</button>
+
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+    </main>
+    <script src="/javascripts\test_paragraph.js"></script>
+    <script src="/javascripts/typing_test.js"></script>
+
+  
+</body>
+
+
+</html>
